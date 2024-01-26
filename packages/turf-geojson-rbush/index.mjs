@@ -1,7 +1,7 @@
 import rbush from "rbush";
 import { featureCollection } from "@turf/helpers";
 import { featureEach } from "@turf/meta";
-import { bbox as turfBBox } from "@turf/bbox";
+import turfBBox from "@turf/bbox";
 
 /**
  * @module rbush
