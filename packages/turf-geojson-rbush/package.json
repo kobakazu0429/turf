@@ -1,6 +1,6 @@
 {
-  "name": "@turf/geojson-rbush",
-  "version": "7.0.0-alpha.2",
+  "name": "@kobakazu0429/turf-geojson-rbush",
+  "version": "1.0.0",
   "description": "GeoJSON implementation of RBush",
   "author": "Turf Authors",
   "contributors": [
@@ -28,27 +28,24 @@
     "spatial",
     "rbush"
   ],
-  "type": "commonjs",
+  "type": "module",
   "main": "dist/cjs/index.cjs",
-  "module": "dist/esm/index.mjs",
-  "types": "dist/cjs/index.d.ts",
+  "module": "index.mjs",
+  "types": "index.d.ts",
   "exports": {
     "./package.json": "./package.json",
     ".": {
       "import": {
-        "types": "./dist/esm/index.d.mts",
-        "default": "./dist/esm/index.mjs"
-      },
-      "require": {
-        "types": "./dist/cjs/index.d.ts",
-        "default": "./dist/cjs/index.cjs"
+        "types": "./index.d.ts",
+        "default": "./index.mjs"
       }
     }
   },
   "sideEffects": false,
   "files": [
     "dist",
-    "index.d.ts"
+    "index.d.ts",
+    "index.mjs"
   ],
   "scripts": {
     "bench": "tsx bench.ts",

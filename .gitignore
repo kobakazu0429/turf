@@ -4,7 +4,7 @@ main.js
 main.es.js
 main.mjs
 main.min.js
-index.mjs
+!packages/turf-geojson-rbush/index.mjs
 *.min.js
 *.es5.js
 .esm-cache
